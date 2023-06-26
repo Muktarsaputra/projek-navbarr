@@ -10,7 +10,7 @@ nav{
     padding: 20px 0;
    
 }
-ul {
+nav ul {
     display:flex;
     list-style:none;
     gap:10px;
@@ -25,4 +25,33 @@ li:hover{
     color:white;
     padding:4px;
     border-radius:212x;
+}
+
+/* menu toggle */
+.togle-menu{
+    display:flex;
+    flex-direction:column;
+    height:20px;
+    justify-content:space-between;
+    background-color:black;
+    
+}
+.togle-menu span{
+    display:block;
+    width:28px;
+    height:5px;
+    background-color:green;
+    border-radius:5px;
+}
+
+/* media scren */
+@media screen and (max-width: 768px){
+    nav ul {
+            width:50%;
+    }
+}
+@media screen and (max-width: 576px){
+    nav ul {
+            display:none;
+    }
 }
